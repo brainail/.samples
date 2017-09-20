@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NetworkPaging</string>
+    <string name="search_hint">What are you looking for !?</string>
+</resources>
