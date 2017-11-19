@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext.versions = [
+        support : "26.1.0",
+        constraint_layout : "1.0.2",
+        arch : "1.0.0-alpha9-1",
+        paging : "1.0.0-alpha1",
+        retrofit: "2.1.0",
+        retrofit_moshi: "2.0.0",
+        glide: "4.1.1"
+]
